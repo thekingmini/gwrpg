@@ -325,33 +325,33 @@ The Credit Shop contains items and boosts purchased with a premium currency, "cr
 | 25,000 | £20.00 |
 | 40,000 | £30.00 |
 
-8.2. Credit Shop Items (Renamed)
-Item	Cost (Credits)	Description
-Elite Pass (1 Day)	290	Grants access to premium tools & exclusive items for 1 day.
-Elite Pass (2 Weeks)	3,650	Grants access to premium tools & exclusive items for 2 weeks.
-XP Booster (1 Day)	290	Activates a 50% XP gain boost for 1 day.
-XP Booster (2 Weeks)	3,650	Activates a 50% XP gain boost for 2 weeks.
-Fortune Token (2 Weeks)	2,100	Boosts crafting luck for 2 weeks.
-Fortune Token (4 Weeks)	3,460	Boosts crafting luck for 4 weeks.
-Gold Saver (1 Week)	1,800	Gives 25% off gang shop items (including printers) for 1 week.
-Gold Saver (2 Weeks)	3,460	Gives 25% off gang shop items (including printers) for 2 weeks.
-Loyalty Pact (4 Weeks)	1,000	Protects from being demoted for 4 weeks.
-Secure Wallet (2 Weeks)	1,000	Prevents pickpocketing for 2 weeks.
-Stash Upgrade	2,500	Adds +1 storage page. Max: +3 pages.
-Market Portfolio+	2,850	Adds +50 stock slots. Max: +100.
-Builder's Boost	1,800	Adds +15 to prop limit. Max: +30.
-Soul Anchor	1,800	Cuts ghost time by 25%. Max: -50%.
-Crafter’s Guide	3,600	+5% chance to craft primary weapons as sidearms. Max: +10%.
-Treasure Hunter	3,940	+50% rare material drops. Max: +100%.
-Forge Upgrade	2,400	Adds +1 to max material forges. Max: +2.
-Printer Upgrade	2,400	Adds +1 to spawned printers. Max stolen: +2. Max: +2/+4.
-Unbind Token	1,550	Unbinds an item, making it tradable. Sent to inventory on purchase.
-Upgrade Extractor	1,820	Removes upgrades from a weapon. Sent to inventory on purchase.
-Armor Extractor	1,820	Removes upgrades from armor. Sent to inventory on purchase.
-Level Reducer	1,820	Lowers a weapon's level requirement by 1. Sent to inventory.
-Armor Level Reducer	1,820	Lowers armor's level requirement by 1. Sent to inventory.
-Name Inscription	1,200	Assigns a custom name to a weapon. Used in Gunsmith. Sent to inventory.
-Title Badge	2,900	Grants a custom title above your character’s name.
+8.2. Credit Shop Items
+| Item | Cost (Credits) | Description |
+| V.I.P (1 Day) | 290 | Grants owner access to restricted tools & VIP items for 1 day. |
+| V.I.P (2 Week) | 3,650 | Grants owner access to restricted tools & VIP items for 2 weeks. |
+| XP Talisman (1 Day) | 290 | Grants the owner 1 day of +50% XP gain upon activation. |
+| XP Talisman (2 Week) | 3,650 | Grants the owner 2 weeks of +50% XP gain upon activation. |
+| Lucky Charm (2 Week) | 2,100 | Grants the owner 2 weeks of extra luck, increasing crafting chances. |
+| Lucky Charm (4 Week) | 3,460 | Grants the owner 4 weeks of extra luck, increasing crafting chances. |
+| Golden Discount (1 Week) | 1,800 | Grants the owner 1 week of 25% discount on all items purchased in the gang shop. Includes money printers. |
+| Golden Discount (2 Week) | 3,460 | Grants the owner 2 week of 25% discount on all items purchased in the gang shop. Includes money printers. |
+| Exclusive Contract (4 Week) | 1,000 | Grants the owner 4 weeks of immunity to demotion. |
+| Steel Wallet (2 Week) | 1,000 | Grants the owner 2 weeks of immunity to pickpocketing. |
+| Storage Expansion | 2,500 | Expands your storage space by +1 page. Maximum of +3 pages through expansion. |
+| Portfolio Expansion | 2,850 | Grants you +50 stocks on the stock market. Maximum of +100 through expansion. |
+| Builders Expansion | 1,800 | Increases your prop limit by +15 props. Maximum of +30 through expansion. |
+| Spirit Extension | 1,800 | Reduces ghost time by 25%. Maximum of -50% through extension. |
+| Crafters Handbook | 3,600 | +5% Chance to craft primary weapons as side weapons. Maximum of +10% through expansion. |
+| Collector | 3,940 | +50% Rare craft material drops. Maximum of 100% through expansion. |
+| Forge Master | 2,400 | Increases your maximum material forges +1. Maximum +2. |
+| Print Master | 2,400 | Increases your maximum spawned money printers +1. Max stolen printers +2. Max of +2/+4. |
+| Release Bind | 1,550 | Release the bind on an item so it can be traded. Item is transferred to inventory on purchase. |
+| Reset Stone | 1,820 | Take the upgrades out of a weapon. Item is transferred to inventory on purchase. |
+| Armor Reset Stone | 1,820 | Take the upgrades out of an armor. Item is transferred to inventory on purchase. |
+| Takedown Orb | 1,820 | Reduce the level requirement of a weapon by 1 level. Item is transferred to inventory on purchase. |
+| Armor Takedown Orb | 1,820 | Reduce the level requirement of an armor piece by 1 level. Item is transferred to inventory on purchase. |
+| Naming Tablet | 1,200 | Give a weapon a custom name. Used in a Gunsmith. Item is transferred to inventory on purchase. |
+| Custom Title | 2,900 | Give your character a custom title above their name. |
 
 9. Accessories System
 Accessories are upgrades placed into ring slots for passive bonuses. Rings can hold 0-2 slots.
@@ -375,104 +375,104 @@ The banking system is a risk/reward mechanic for depositors and bankers.
 
 10.2. Deposit Limits by Level
 The maximum amount for a single deposit is based on player level.
-| Level | Deposit Limit |
-|-------|----------------|
-| 1     | $2,525         |
-| 2     | $5,050         |
-| 3     | $7,575         |
-| 4     | $10,101        |
-| 5     | $12,626        |
-| 6     | $15,151        |
-| 7     | $17,676        |
-| 8     | $20,202        |
-| 9     | $22,727        |
-| 10    | $25,525        |
-| 11    | $27,777        |
-| 12    | $30,303        |
-| 13    | $32,828        |
-| 14    | $35,353        |
-| 15    | $37,878        |
-| 16    | $40,404        |
-| 17    | $42,929        |
-| 18    | $45,454        |
-| 19    | $47,979        |
-| 20    | $50,505        |
-| 21    | $53,030        |
-| 22    | $55,555        |
-| 23    | $58,080        |
-| 24    | $60,606        |
-| 25    | $63,131        |
-| 26    | $65,656        |
-| 27    | $68,181        |
-| 28    | $70,707        |
-| 29    | $73,232        |
-| 30    | $75,757        |
-| 31    | $78,282        |
-| 32    | $80,808        |
-| 33    | $83,333        |
-| 34    | $85,858        |
-| 35    | $88,383        |
-| 36    | $90,909        |
-| 37    | $93,434        |
-| 38    | $95,959        |
-| 39    | $98,484        |
-| 40    | $101,010       |
-| 41    | $103,535       |
-| 42    | $106,060       |
-| 43    | $108,585       |
-| 44    | $111,111       |
-| 45    | $113,636       |
-| 46    | $116,161       |
-| 47    | $118,686       |
-| 48    | $121,212       |
-| 49    | $123,737       |
-| 50    | $126,262       |
-| 51    | $128,878       |
-| 52    | $131,313       |
-| 53    | $133,838       |
-| 54    | $136,363       |
-| 55    | $138,888       |
-| 56    | $141,414       |
-| 57    | $143,939       |
-| 58    | $146,464       |
-| 59    | $148,989       |
-| 60    | $151,515       |
-| 61    | $154,040       |
-| 62    | $156,565       |
-| 63    | $159,090       |
-| 64    | $161,616       |
-| 65    | $164,141       |
-| 66    | $166,666       |
-| 67    | $169,191       |
-| 68    | $171,717       |
-| 69    | $174,242       |
-| 70    | $176,767       |
-| 71    | $179,292       |
-| 72    | $181,818       |
-| 73    | $184,343       |
-| 74    | $186,868       |
-| 75    | $189,939       |
-| 76    | $191,919       |
-| 77    | $194,444       |
-| 78    | $196,969       |
-| 79    | $199,494       |
-| 80    | $202,020       |
-| 81    | $204,545       |
-| 82    | $207,070       |
-| 83    | $209,595       |
-| 84    | $212,121       |
-| 85    | $214,646       |
-| 86    | $217,171       |
-| 87    | $219,696       |
-| 88    | $224,747       |
-| 89    | $226,010       |
-| 90    | $227,272       |
-| 91    | $229,797       |
-| 92    | $232,323       |
-| 93    | $234,848       |
-| 94    | $237,373       |
-| 95    | $239,898       |
-| 96    | $242,424       |
-| 97    | $244,949       |
-| 98    | $247,474       |
-| 99    | $250,000       |
+
+| Level | Deposit Limit (Customer) | Deposit Limit (Banker) |
+| 1 | $2,525 | $5,050 |
+| 2 | $5,050 | (not specified) |
+| 3 | $7,575 | (not specified) |
+| 4 | $10,101 | (not specified) |
+| 5 | $12,626 | (not specified) |
+| 6 | $15,151 | (not specified) |
+| 7 | $17,676 | (not specified) |
+| 8 | $20,202 | (not specified) |
+| 9 | $22,727 | (not specified) |
+| 10 | $25,525 | (not specified) |
+| 11 | $27,777 | (not specified) |
+| 12 | $30,303 | (not specified) |
+| 13 | $32,828 | (not specified) |
+| 14 | $35,353 | (not specified) |
+| 15 | $37,878 | (not specified) |
+| 16 | $40,404 | (not specified) |
+| 17 | $42,929 | (not specified) |
+| 18 | $45,454 | (not specified) |
+| 19 | $47,979 | (not specified) |
+| 20 | $50,505 | (not specified) |
+| 21 | $53,030 | (not specified) |
+| 22 | $55,555 | (not specified) |
+| 23 | $58,080 | (not specified) |
+| 24 | $60,606 | (not specified) |
+| 25 | $63,131 | (not specified) |
+| 26 | $65,656 | (not specified) |
+| 27 | $68,181 | (not specified) |
+| 28 | $70,707 | (not specified) |
+| 29 | $73,232 | (not specified) |
+| 30 | $75,757 | (not specified) |
+| 31 | $78,282 | (not specified) |
+| 32 | $80,808 | (not specified) |
+| 33 | $83,333 | (not specified) |
+| 34 | $85,858 | (not specified) |
+| 35 | $88,383 | (not specified) |
+| 36 | $90,909 | (not specified) |
+| 37 | $93,434 | (not specified) |
+| 38 | $95,959 | (not specified) |
+| 39 | $98,484 | (not specified) |
+| 40 | $101,010 | (not specified) |
+| 41 | $103,535 | (not specified) |
+| 42 | $106,060 | (not specified) |
+| 43 | $108,585 | (not specified) |
+| 44 | $111,111 | (not specified) |
+| 45 | $113,636 | (not specified) |
+| 46 | $116,161 | (not specified) |
+| 47 | $118,686 | (not specified) |
+| 48 | $121,212 | (not specified) |
+| 49 | $123,737 | (not specified) |
+| 50 | $126,262 | (not specified) |
+| 51 | $128,878 | (not specified) |
+| 52 | $131,313 | (not specified) |
+| 53 | $133,838 | (not specified) |
+| 54 | $136,363 | (not specified) |
+| 55 | $138,888 | (not specified) |
+| 56 | $141,414 | (not specified) |
+| 57 | $143,939 | (not specified) |
+| 58 | $146,464 | (not specified) |
+| 59 | $148,989 | (not specified) |
+| 60 | $151,515 | (not specified) |
+| 61 | $154,040 | (not specified) |
+| 62 | $156,565 | (not specified) |
+| 63 | $159,090 | (not specified) |
+| 64 | $161,616 | (not specified) |
+| 65 | $164,141 | (not specified) |
+| 66 | $166,666 | (not specified) |
+| 67 | $169,191 | (not specified) |
+| 68 | $171,717 | (not specified) |
+| 69 | $174,242 | (not specified) |
+| 70 | $176,767 | (not specified) |
+| 71 | $179,292 | (not specified) |
+| 72 | $181,818 | (not specified) |
+| 73 | $184,343 | (not specified) |
+| 74 | $186,868 | (not specified) |
+| 75 | $189,939 | (not specified) |
+| 76 | $191,919 | (not specified) |
+| 77 | $194,444 | (not specified) |
+| 78 | $196,969 | (not specified) |
+| 79 | $199,494 | (not specified) |
+| 80 | $202,020 | (not specified) |
+| 81 | $204,545 | (not specified) |
+| 82 | $207,070 | (not specified) |
+| 83 | $209,595 | (not specified) |
+| 84 | $212,121 | (not specified) |
+| 85 | $214,646 | (not specified) |
+| 86 | $217,171 | (not specified) |
+| 87 | $219,696 | (not specified) |
+| 88 | $224,747 | (not specified) |
+| 89 | (not specified) | (not specified) |
+| 90 | $227,272 | (not specified) |
+| 91 | $229,797 | (not specified) |
+| 92 | $232,323 | (not specified) |
+| 93 | $234,848 | (not specified) |
+| 94 | $237,373 | (not specified) |
+| 95 | $239,898 | (not specified) |
+| 96 | $242,424 | (not specified) |
+| 97 | $244,949 | (not specified) |
+| 98 | $247,474 | (not specified) |
+| 99 | $250,000 | (not specified) |
