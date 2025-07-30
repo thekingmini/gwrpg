@@ -1,42 +1,54 @@
-GangWarsRPG - The Complete Core Mechanics
-This document is the final, unabridged compilation of the foundational backend logic for player progression, economy, social structures, item improvement, inventory, the in-game shop, itemization, accessories, the credit shop, and banking in GangWarsRPG.
+# RPG System - Complete Core Mechanics
 
-Table of Contents
-Experience (XP) System
+**Version:** 1.0  
+**Last Updated:** 2024  
+**Repository:** thekingmini/gwrpg  
 
-Economy (Money) System
+This document is the comprehensive compilation of the foundational backend logic for player progression, economy, social structures, equipment enhancement, inventory, shop systems, itemization, accessories, premium features, and financial systems.
 
-Gang System
+## Table of Contents
 
-Item Upgrades & Refining
+1. [Experience (XP) System](#1-experience-xp-system)
+   - [XP Requirements by Level](#11-xp-requirements-by-level)
+   - [XP Acquisition Methods](#12-xp-acquisition-methods)
+2. [Economy (Money) System](#2-economy-money-system)
+   - [Revenue Generators](#21-revenue-generators)
+   - [Other Money Acquisition Methods](#22-other-money-acquisition-methods)
+3. [Organization System](#3-organization-system)
+   - [Organization Experience & Leveling](#31-organization-experience--leveling)
+   - [Organization Enhancements](#32-organization-enhancements)
+   - [Organization Management](#33-organization-management)
+4. [Equipment Enhancements & Refining](#4-equipment-enhancements--refining)
+   - [Weapon Enhancements](#41-weapon-enhancements)
+   - [Armor Enhancements](#42-armor-enhancements)
+   - [Refining Process](#43-refining-process)
+5. [Inventory System](#5-inventory-system)
+   - [Core Mechanics](#51-core-mechanics)
+   - [Inventory Capacity](#52-inventory-capacity)
+6. [Shop System](#6-shop-system)
+   - [Equipment Categories](#61-equipment-categories)
+7. [Itemization](#7-itemization)
+   - [Equipment Rarity](#71-equipment-rarity)
+8. [Premium Shop](#8-premium-shop)
+   - [Credit Packages](#81-credit-packages)
+   - [Premium Shop Items](#82-premium-shop-items)
+9. [Accessories System](#9-accessories-system)
+   - [Accessory Types & Effects](#91-accessory-types--effects)
+10. [Financial System](#10-financial-system)
+    - [Core Mechanics](#101-core-mechanics)
+    - [Deposit Limits by Level](#102-deposit-limits-by-level)
 
-4.1 Weapon Upgrades
+## 1. Experience (XP) System
 
-4.2 Armor Upgrades
+Experience Points (XP) are required to reach the next level in the system. Gaining XP is the primary measure of a player's progression and seniority, unlocking new abilities, equipment, or access levels.
 
-4.3 Refining Process
+### 1.1. XP Requirements by Level
 
-Inventory System
-
-The Shop System
-
-Itemization
-
-Credit Shop
-
-Accessories System
-
-Banking System
-
-1. Experience (XP) System
-Experience Points (XP) are required to reach the next level in GangWars. Gaining XP is the primary measure of a player's progression and seniority, unlocking new abilities, items, or access levels.
-
-1.1. XP Requirements by Level
 The table below shows the total experience points required to advance to the next level.
 
-|
-
 | To Reach Level | Required XP |
+|----------------|-------------|
+|----------------|-------------|
 | 2 | 550 |
 | 3 | 1,050 |
 | 4 | 1,750 |
@@ -137,68 +149,78 @@ The table below shows the total experience points required to advance to the nex
 | 99 | 980,250 |
 | 100 | "Be Cool!" |
 
-1.2. XP Acquisition Methods
-| Method | Notes |
-| Collecting Printer Money | See Section 2.1 for specific values. |
-| Completing Hacking Missions | Higher difficulty missions yield more XP. |
-| Arresting Players (Police) | XP scales with the target's wanted level. |
-| Killing Other Players | Base value modified by level difference. |
-| Killing Rival Gang Members | Bonus XP on top of a standard kill. |
-| Depositing Money in Bank | Small XP reward to encourage banking. |
-| Collecting Deposits (Banker) | XP scales with the number of deposits handled. |
-| Drug Farming | XP gained upon successful sale of drugs. |
+### 1.2. XP Acquisition Methods
 
-2. Economy (Money) System
+| Method | Notes |
+|--------|-------|
+| Collecting Revenue Generator Money | See Section 2.1 for specific values. |
+| Completing System Infiltration Missions | Higher difficulty missions yield more XP. |
+| Apprehending Players (Security Forces) | XP scales with the target's wanted level. |
+| Eliminating Other Players | Base value modified by level difference. |
+| Eliminating Rival Organization Members | Bonus XP on top of a standard elimination. |
+| Depositing Money in Financial System | Small XP reward to encourage banking. |
+| Collecting Deposits (Financial Specialist) | XP scales with the number of deposits handled. |
+| Resource Farming | XP gained upon successful sale of resources. |
+
+## 2. Economy (Money) System
+
 Money is the central resource for acquiring goods, services, and power.
 
-2.1. Money Printers
-Money printers are a primary source of passive income. Each printer has a level requirement and produces a set amount of cash and XP every 90 seconds. VIP printers offer better returns.
+### 2.1. Revenue Generators
+
+Revenue generators are a primary source of passive income. Each generator has a level requirement and produces a set amount of cash and XP every 90 seconds. Premium generators offer better returns.
 
 | Level | Name | Cost | Output / 90s | XP / Print |
-| 1 | Silver Money Printer | $1,000 | $200 | 18.5 XP |
-| 3 | Tuned Gold Money Printer (VIP) | $2,000 | $400 | 44.4 XP |
-| 5 | Gold Money Printer | $2,000 | $400 | 37 XP |
-| 15 | Platinum Money Printer | $3,800 | $760 | 70.3 XP |
-| 22 | Tuned Diamond Money Printer (VIP) | $6,400 | $1,280 | 142.1 XP |
-| 25 | Diamond Money Printer | $6,400 | $1,280 | 118.4 XP |
-| 35 | Emerald Money Printer | $9,800 | $1,960 | 181.3 XP |
-| 42 | Tuned Money Factory (VIP) | $14,000 | $2,800 | 310.8 XP |
-| 45 | Money Factory | $14,000 | $2,800 | 259 XP |
+|-------|------|------|--------------|------------|
+| 1 | Silver Revenue Generator | $1,000 | $200 | 18.5 XP |
+| 3 | Tuned Gold Revenue Generator (Premium) | $2,000 | $400 | 44.4 XP |
+| 5 | Gold Revenue Generator | $2,000 | $400 | 37 XP |
+| 15 | Platinum Revenue Generator | $3,800 | $760 | 70.3 XP |
+| 22 | Tuned Diamond Revenue Generator (Premium) | $6,400 | $1,280 | 142.1 XP |
+| 25 | Diamond Revenue Generator | $6,400 | $1,280 | 118.4 XP |
+| 35 | Emerald Revenue Generator | $9,800 | $1,960 | 181.3 XP |
+| 42 | Tuned Revenue Factory (Premium) | $14,000 | $2,800 | 310.8 XP |
+| 45 | Revenue Factory | $14,000 | $2,800 | 259 XP |
 | 55 | Silver Silo | $19,400 | $3,880 | 358.1 XP |
-| 62 | Tuned Gold Money Silo (VIP) | $24,800 | $4,960 | 549.8 XP |
-| 65 | Gold Money Silo | $24,800 | $4,960 | 458.2 XP |
-| 75 | Ruby Money Silo | $31,400 | $6,280 | 580.9 XP |
-| 82 | Quantum Money Factory (VIP) | $38,800 | $7,760 | 860.2 XP |
-| 85 | Nuclear Money Factory | $38,800 | $7,760 | 716.8 XP |
+| 62 | Tuned Gold Revenue Silo (Premium) | $24,800 | $4,960 | 549.8 XP |
+| 65 | Gold Revenue Silo | $24,800 | $4,960 | 458.2 XP |
+| 75 | Ruby Revenue Silo | $31,400 | $6,280 | 580.9 XP |
+| 82 | Quantum Revenue Factory (Premium) | $38,800 | $7,760 | 860.2 XP |
+| 85 | Nuclear Revenue Factory | $38,800 | $7,760 | 716.8 XP |
 
-2.2. Other Money Acquisition Methods
+### 2.2. Other Money Acquisition Methods
+
 | Method | Notes |
-| Money Launderers | Higher yield than printers, but with associated risks. |
-| Evidence Collection (Police) | Flat rate per evidence piece. |
-| Arresting Wanted Player (Police) | Income is tied to the target's bounty. |
+|--------|-------|
+| Money Launderers | Higher yield than generators, but with associated risks. |
+| Evidence Collection (Security Forces) | Flat rate per evidence piece. |
+| Apprehending Wanted Player (Security Forces) | Income is tied to the target's bounty. |
 | Stock Market Investing | A complex system based on market fluctuations. |
-| Selling Items/Shipments | Player-to-player transaction. |
-| Bank Interest | Primary earning method from deposits. See Section 10. |
-| Banker Fees | Bankers earn fees from handling deposits. See Section 10. |
-| Selling Drugs | Prices can fluctuate based on server-wide sales. |
+| Selling Equipment/Shipments | Player-to-player transaction. |
+| Financial System Interest | Primary earning method from deposits. See Section 10. |
+| Financial Specialist Fees | Financial Specialists earn fees from handling deposits. See Section 10. |
+| Selling Resources | Prices can fluctuate based on server-wide sales. |
 | Lottery Winnings (Mayor) | Winner receives the total pot minus a house cut. |
 | Selling Security Turrets | Player-to-player transaction. |
 | Stealing Goods | Transfers ownership of an item. No new money is generated. |
-| Bank Robbery | Robber steals 50% of the bank's total funds. See Section 10. |
+| Financial System Robbery | Robber steals 50% of the financial system's total funds. See Section 10. |
 | Terrorist Map Destruction | Large, fixed payout for completing major objectives. |
 | Hitman Contracts | Player-set contracts. |
 | Paychecks | Fixed amount paid at regular intervals based on job. |
 | Player Contracts | System to formalize player-to-player employment. |
 | Pickpocketing | Steal a percentage of a target's on-hand cash. |
-| Selling Found Items | Player-to-player transaction for world-spawned loot. |
+| Selling Found Equipment | Player-to-player transaction for world-spawned loot. |
 
-3. Gang System
-Gangs are a core gameplay mechanic. Being in a gang provides advantages but also creates rivalries.
+## 3. Organization System
 
-3.1. Gang Experience & Leveling
-Gangs gain their own experience (Gang XP) to level up. Below is the total experience required to reach each level.
+Organizations are a core gameplay mechanic. Being in an organization provides advantages but also creates rivalries.
+
+### 3.1. Organization Experience & Leveling
+
+Organizations gain their own experience (Organization XP) to level up. Below is the total experience required to reach each level.
 
 | Target Level | Required XP |
+|--------------|-------------|
 | 2 | 165,000 |
 | 3 | 660,000 |
 | 4 | 1,485,000 |
@@ -219,46 +241,55 @@ Gangs gain their own experience (Gang XP) to level up. Below is the total experi
 | 19 | 53,460,000 |
 | 20 | 59,565,000 |
 
-3.2. Gang Upgrades
-Gang Leaders can purchase upgrades that provide passive bonuses to all members. Each upgrade has 10 levels.
+### 3.2. Organization Enhancements
 
-| Upgrade | Description | Effect per Level | Max Bonus |
-| Gang Heart | Increase the max health of all your gang members. | +2% | +20% |
-| Gang Shield | Increase the max armor of all your gang members. | +2% | +20% |
-| Street Spirit | Gives your gang members regenerating health. | +0.25% / 5 Sec | +2.5% / 5 Sec |
-| Made Man | Gives your gang members an EXP boost. | +2% | +20% |
-| Streetwise | Gives your gang members a speed boost. | +0.5% | +5% |
-| Goldfinger | Gives your gang members more money from printers. | +2.5% | +25% |
-| Sticky Fingers | Your gang members grow drugs faster. | +2.5% | +25% |
-| Charmed | Gives your gang members more luck in crafting. | +2.0% | +20% |
-| Expansion | Allow more members to join the gang. | +2 Members | +20 Members |
-| Sworn Enemy | Steal more money from rivals when you kill them. | +2.5% | +25% |
-| Five Finger Discount | Get a discount on items in the gang shop. | +2% | +20% |
-| Invincible | Reduce the ghost time of your gang members. | +2.5% | +25% |
+Organization Leaders can purchase enhancements that provide passive bonuses to all members. Each enhancement has 10 levels.
+
+| Enhancement | Description | Effect per Level | Max Bonus |
+|-------------|-------------|------------------|-----------|
+| Organization Heart | Increase the max health of all your organization members. | +2% | +20% |
+| Organization Shield | Increase the max armor of all your organization members. | +2% | +20% |
+| Street Spirit | Gives your organization members regenerating health. | +0.25% / 5 Sec | +2.5% / 5 Sec |
+| Made Man | Gives your organization members an EXP boost. | +2% | +20% |
+| Streetwise | Gives your organization members a speed boost. | +0.5% | +5% |
+| Goldfinger | Gives your organization members more money from generators. | +2.5% | +25% |
+| Sticky Fingers | Your organization members grow resources faster. | +2.5% | +25% |
+| Charmed | Gives your organization members more luck in crafting. | +2.0% | +20% |
+| Expansion | Allow more members to join the organization. | +2 Members | +20 Members |
+| Sworn Enemy | Steal more money from rivals when you eliminate them. | +2.5% | +25% |
+| Five Finger Discount | Get a discount on equipment in the organization shop. | +2% | +20% |
+| Invincible | Reduce the respawn time of your organization members. | +2.5% | +25% |
 | Hustler | Increase money collected when pickpocketing. | +5% | +50% |
-| Wall Street | Increase money from bank deposits. | +2% | +20% |
+| Wall Street | Increase money from financial system deposits. | +2% | +20% |
 | Goodfella | Get more XP when completing missions. | +2% | +20% |
-| Wise Guys | Your gang will earn more XP overall. | +2.5% | +25% |
-| Gang Land | Capture territory poles faster. | +5% | +50% |
+| Wise Guys | Your organization will earn more XP overall. | +2.5% | +25% |
+| Organization Land | Capture territory poles faster. | +5% | +50% |
 
-3.3. Gang Management
+### 3.3. Organization Management
+
 | Role | Permissions |
-| Gang Leader | Invite, Kick, Promote, Demote, Purchase Gang Upgrades. |
+|------|-------------|
+| Organization Leader | Invite, Kick, Promote, Demote, Purchase Organization Enhancements. |
 | Vice Leader | Invite, Promote, Demote (below Vice Leader). |
-| Member | Standard member with access to gang benefits. |
+| Member | Standard member with access to organization benefits. |
 
-4. Item Upgrades & Refining
-Players can enhance their gear by applying upgrades.
+## 4. Equipment Enhancements & Refining
 
-4.1. Weapon Upgrades
-| Upgrade Type | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Description |
+Players can enhance their gear by applying enhancements.
+
+### 4.1. Weapon Enhancements
+
+| Enhancement Type | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Description |
+|------------------|---------|---------|---------|---------|---------|---------|-------------|
 | Damage | +5% | +10% | +15% | +20% | +25% | +30% | Increases the percentage of damage that a gun does. |
 | Ice Damage | +5% | +10% | +15% | +20% | +25% | +30% | Chance to slow the victim down for a few seconds. |
 | Fire Damage | +5% | +10% | +15% | +20% | +25% | +30% | Chance to set the victim on fire, dealing damage over time. |
 | Accuracy | +4% | +8% | +12% | +16% | +20% | +24% | Reduces weapon recoil. |
 
-4.2. Armor Upgrades
-| Upgrade Type | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Description |
+### 4.2. Armor Enhancements
+
+| Enhancement Type | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Description |
+|------------------|---------|---------|---------|---------|---------|---------|-------------|
 | Base Health | +60 | +110 | +180 | +250 | +320 | +400 | Increases the base amount of your armor's health. |
 | Health Power | +3% | +6% | +9% | +12% | +15% | +18% | Adds a percentage of your standard health to the armor. |
 | Base Armour | +50 | +100 | +150 | +200 | +300 | +400 | Increases the base amount of your armor's armor value. |
@@ -268,45 +299,57 @@ Players can enhance their gear by applying upgrades.
 | Ice Resistance | +3% | +6% | +9% | +12% | +15% | +18% | Makes you resistant to ice damage. |
 | Absorption | +1% | +2% | +3% | +4% | +5% | +6% | Absorbs a percentage of incoming damage. |
 
-4.3. Refining Process
-Formula: 3x Upgrades of the same type and level N → 1x Upgrade of level N+1.
+### 4.3. Refining Process
 
-Example: 3x Level 2 Damage Upgrades → 1x Level 3 Damage Upgrade.
+**Formula:** 3x Enhancements of the same type and level N → 1x Enhancement of level N+1.
 
-5. Inventory System
-The inventory is a persistent backpack for items.
+**Example:** 3x Level 2 Damage Enhancements → 1x Level 3 Damage Enhancement.
 
-5.1. Core Mechanics
+## 5. Inventory System
+
+The inventory is a persistent backpack for equipment.
+
+### 5.1. Core Mechanics
+
 | Action | Description |
-| Item Pickup | Use the "Inventory" weapon and left-click on an item. |
+|--------|-------------|
+| Equipment Pickup | Use the "Inventory" weapon and left-click on an item. |
 | Access | Opened via a HUD icon. |
-| Persistence | Inventory transfers across all GangWarsRP servers. |
+| Persistence | Inventory transfers across all servers. |
 
-5.2. Inventory Capacity
+### 5.2. Inventory Capacity
+
 | Capacity Tier | Total Slots | Method of Unlock |
+|---------------|-------------|------------------|
 | Default | [20 SLOTS] | Standard for all new players. |
-| Maximum | 80 Slots (4 pages) | Upgraded via the credit shop. |
+| Maximum | 80 Slots (4 pages) | Enhanced via the premium shop. |
 
-6. The Shop System
-The Shop is the main interface for buying items with in-game money.
+## 6. Shop System
 
-6.1. Item Categories
+The Shop is the main interface for buying equipment with in-game money.
+
+### 6.1. Equipment Categories
+
 | Category | Examples | Job Requirement |
+|----------|----------|----------------|
 | Ammunition | Pistol Ammo, Rifle Ammo | N/A |
-| Money Printers | Ruby, Emerald, Diamond | N/A |
-| Printer Add-ons | Boosters | N/A |
+| Revenue Generators | Ruby, Emerald, Diamond | N/A |
+| Generator Add-ons | Boosters | N/A |
 | Blueprints | Car Blueprints, Weapon Blueprints | N/A |
 | Consumables | Health Shipment, Armor Shipment | N/A |
 | Boosts | Speed Boost, Health Boost | N/A |
-| Job-Specific | Hacking Terminal | Hacker |
+| Job-Specific | System Infiltration Terminal | System Infiltrator |
 
-7. Itemization
-This section defines the rarity system that governs item quality.
+## 7. Itemization
 
-7.1. Item Rarity
-This hierarchy defines the quality of items. Higher rarity items will have better base stats or more upgrade slots.
+This section defines the rarity system that governs equipment quality.
+
+### 7.1. Equipment Rarity
+
+This hierarchy defines the quality of equipment. Higher rarity equipment will have better base stats or more enhancement slots.
 
 | Rarity Tier | Color Code |
+|-------------|------------|
 | Standard | [Grey] |
 | Rare | [Blue] |
 | Unique | [Purple] |
@@ -314,69 +357,82 @@ This hierarchy defines the quality of items. Higher rarity items will have bette
 | Epic | [Gold] |
 | Legendary | [Red] |
 
-8. Credit Shop
-The Credit Shop contains items and boosts purchased with a premium currency, "credits," which are bought with real money.
+## 8. Premium Shop
 
-8.1. Credit Packages
+The Premium Shop contains equipment and boosts purchased with a premium currency, "credits," which are bought with real money.
+
+### 8.1. Credit Packages
+
 | Credits | Price (£) |
+|---------|-----------|
 | 2,500 | £2.50 |
 | 5,000 | £5.00 |
 | 12,000 | £10.00 |
 | 25,000 | £20.00 |
 | 40,000 | £30.00 |
 
-8.2. Credit Shop Items
+### 8.2. Premium Shop Items
+
 | Item | Cost (Credits) | Description |
-| V.I.P (1 Day) | 290 | Grants owner access to restricted tools & VIP items for 1 day. |
-| V.I.P (2 Week) | 3,650 | Grants owner access to restricted tools & VIP items for 2 weeks. |
+|------|----------------|-------------|
+| Premium Status (1 Day) | 290 | Grants owner access to restricted tools & Premium equipment for 1 day. |
+| Premium Status (2 Week) | 3,650 | Grants owner access to restricted tools & Premium equipment for 2 weeks. |
 | XP Talisman (1 Day) | 290 | Grants the owner 1 day of +50% XP gain upon activation. |
 | XP Talisman (2 Week) | 3,650 | Grants the owner 2 weeks of +50% XP gain upon activation. |
 | Lucky Charm (2 Week) | 2,100 | Grants the owner 2 weeks of extra luck, increasing crafting chances. |
 | Lucky Charm (4 Week) | 3,460 | Grants the owner 4 weeks of extra luck, increasing crafting chances. |
-| Golden Discount (1 Week) | 1,800 | Grants the owner 1 week of 25% discount on all items purchased in the gang shop. Includes money printers. |
-| Golden Discount (2 Week) | 3,460 | Grants the owner 2 week of 25% discount on all items purchased in the gang shop. Includes money printers. |
+| Golden Discount (1 Week) | 1,800 | Grants the owner 1 week of 25% discount on all equipment purchased in the organization shop. Includes revenue generators. |
+| Golden Discount (2 Week) | 3,460 | Grants the owner 2 week of 25% discount on all equipment purchased in the organization shop. Includes revenue generators. |
 | Exclusive Contract (4 Week) | 1,000 | Grants the owner 4 weeks of immunity to demotion. |
 | Steel Wallet (2 Week) | 1,000 | Grants the owner 2 weeks of immunity to pickpocketing. |
 | Storage Expansion | 2,500 | Expands your storage space by +1 page. Maximum of +3 pages through expansion. |
 | Portfolio Expansion | 2,850 | Grants you +50 stocks on the stock market. Maximum of +100 through expansion. |
 | Builders Expansion | 1,800 | Increases your prop limit by +15 props. Maximum of +30 through expansion. |
-| Spirit Extension | 1,800 | Reduces ghost time by 25%. Maximum of -50% through extension. |
+| Spirit Extension | 1,800 | Reduces respawn time by 25%. Maximum of -50% through extension. |
 | Crafters Handbook | 3,600 | +5% Chance to craft primary weapons as side weapons. Maximum of +10% through expansion. |
 | Collector | 3,940 | +50% Rare craft material drops. Maximum of 100% through expansion. |
 | Forge Master | 2,400 | Increases your maximum material forges +1. Maximum +2. |
-| Print Master | 2,400 | Increases your maximum spawned money printers +1. Max stolen printers +2. Max of +2/+4. |
+| Print Master | 2,400 | Increases your maximum spawned revenue generators +1. Max stolen generators +2. Max of +2/+4. |
 | Release Bind | 1,550 | Release the bind on an item so it can be traded. Item is transferred to inventory on purchase. |
-| Reset Stone | 1,820 | Take the upgrades out of a weapon. Item is transferred to inventory on purchase. |
-| Armor Reset Stone | 1,820 | Take the upgrades out of an armor. Item is transferred to inventory on purchase. |
+| Reset Stone | 1,820 | Take the enhancements out of a weapon. Item is transferred to inventory on purchase. |
+| Armor Reset Stone | 1,820 | Take the enhancements out of an armor. Item is transferred to inventory on purchase. |
 | Takedown Orb | 1,820 | Reduce the level requirement of a weapon by 1 level. Item is transferred to inventory on purchase. |
 | Armor Takedown Orb | 1,820 | Reduce the level requirement of an armor piece by 1 level. Item is transferred to inventory on purchase. |
 | Naming Tablet | 1,200 | Give a weapon a custom name. Used in a Gunsmith. Item is transferred to inventory on purchase. |
 | Custom Title | 2,900 | Give your character a custom title above their name. |
 
-9. Accessories System
-Accessories are upgrades placed into ring slots for passive bonuses. Rings can hold 0-2 slots.
+## 9. Accessories System
 
-9.1. Accessory Types & Effects
+Accessories are enhancements placed into ring slots for passive bonuses. Rings can hold 0-2 slots.
+
+### 9.1. Accessory Types & Effects
+
 | Accessory Type | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 |
+|----------------|---------|---------|---------|---------|---------|---------|
 | Experience Boost | +1% | +2% | +3% | +4% | +5% | +6% |
 | Luck Boost | +1% | +2% | +3% | +4% | +5% | +6% |
 | Print Amount Boost | +2% | +4% | +6% | +8% | +10% | +12% |
-| Ghost Reduce | -1% | -2% | -3% | -4% | -5% | -6% |
+| Respawn Reduce | -1% | -2% | -3% | -4% | -5% | -6% |
 | Base Damage | +1 | +1 | +2 | +2 | +3 | +4 |
 
-10. Banking System
-The banking system is a risk/reward mechanic for depositors and bankers.
+## 10. Financial System
 
-10.1. Core Mechanics
+The financial system is a risk/reward mechanic for depositors and financial specialists.
+
+### 10.1. Core Mechanics
+
 | Role / Action | Description |
-| Depositor | Gives money to a Banker to earn interest. Goal: Money. |
-| Banker | Facilitates deposits for customers. Goal: XP. |
-| Bank Robbery | A thief can rob the bank. If successful, deposits are lost and the robber gets 50% of the bank's total funds. |
+|---------------|-------------|
+| Depositor | Gives money to a Financial Specialist to earn interest. Goal: Money. |
+| Financial Specialist | Facilitates deposits for customers. Goal: XP. |
+| Financial System Robbery | A thief can rob the financial system. If successful, deposits are lost and the robber gets 50% of the financial system's total funds. |
 
-10.2. Deposit Limits by Level
+### 10.2. Deposit Limits by Level
+
 The maximum amount for a single deposit is based on player level.
 
-| Level | Deposit Limit (Customer) | Deposit Limit (Banker) |
+| Level | Deposit Limit (Customer) | Deposit Limit (Financial Specialist) |
+|-------|--------------------------|-------------------------------------|
 | 1 | $2,525 | $5,050 |
 | 2 | $5,050 | (not specified) |
 | 3 | $7,575 | (not specified) |
